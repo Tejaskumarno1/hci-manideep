@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>exported project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 300vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="mac-book-pro141-container">
+        <div class="mac-book-pro141-mac-book-pro141">
+          <div class="mac-book-pro141-exclude1">
+            <img
+              src="public/external/exclude1780-imkl.svg"
+              alt="Exclude1780"
+              class="mac-book-pro141-exclude2"
+            />
+          </div>
+          <img
+            src="public/external/rectangle5515-2fe7-800h.png"
+            alt="Rectangle5515"
+            class="mac-book-pro141-rectangle5"
+          />
+          <img
+            src="public/external/rectangle457-90snu-200h.png"
+            alt="Rectangle457"
+            class="mac-book-pro141-rectangle4"
+          />
+          <span class="mac-book-pro141-text10">Borrow Buddies</span>
+          <div class="mac-book-pro141-group3">
+            <div class="mac-book-pro141-group2">
+              <div class="mac-book-pro141-group1">
+                <span class="mac-book-pro141-text11">Warangal</span>
+              </div>
+            </div>
+          </div>
+          <div class="mac-book-pro141-group4">
+            <span class="mac-book-pro141-text12">Search for Products</span>
+          </div>
+          <div class="mac-book-pro141-loginsignupbtn1">
+            <span class="mac-book-pro141-text13">Login / Signup</span>
+          </div>
+          <span class="mac-book-pro141-text14">
+            <span>Why buy when</span>
+            <br />
+            <span>you can rent? Unlock</span>
+            <br />
+            <span>access to everything,</span>
+            <br />
+            <span>anytime!</span>
+          </span>
+          <div class="mac-book-pro141-loginsignupbtn2">
+            <span class="mac-book-pro141-text22">Shop Now</span>
+          </div>
+          <span class="mac-book-pro141-text23">
+            Rent Furniture &amp; Appliances
+          </span>
+          <span class="mac-book-pro141-text24">
+            You'll love to take these Home
+          </span>
+          <span class="mac-book-pro141-text25">There's more to renting</span>
+          <img
+            src="public/external/rectangle6549-xd3f-300h.png"
+            alt="Rectangle6549"
+            class="mac-book-pro141-rectangle6"
+          />
+          <img
+            src="public/external/rectangle1168-aczl-300h.png"
+            alt="Rectangle1168"
+            class="mac-book-pro141-rectangle11"
+          />
+          <img
+            src="public/external/rectangle964-x4n-300h.png"
+            alt="Rectangle964"
+            class="mac-book-pro141-rectangle9"
+          />
+          <img
+            src="public/external/rectangle1066-8h4-400w.png"
+            alt="Rectangle1066"
+            class="mac-book-pro141-rectangle10"
+          />
+          <img
+            src="public/external/rectangle8552-ky1j-300h.png"
+            alt="Rectangle8552"
+            class="mac-book-pro141-rectangle8"
+          />
+          <img
+            src="public/external/rectangle7550-51g-300h.png"
+            alt="Rectangle7550"
+            class="mac-book-pro141-rectangle7"
+          />
+          <img
+            src="public/external/rectangle12612-al9i-600h.png"
+            alt="Rectangle12612"
+            class="mac-book-pro141-rectangle12"
+          />
+          <img
+            src="public/external/rectangle13617-v7br-600h.png"
+            alt="Rectangle13617"
+            class="mac-book-pro141-rectangle13"
+          />
+          <img
+            src="public/external/rectangle14619-1yix-600h.png"
+            alt="Rectangle14619"
+            class="mac-book-pro141-rectangle14"
+          />
+          <span class="mac-book-pro141-text26">Morris Office Chair</span>
+          <span class="mac-book-pro141-text27">Rent</span>
+          <span class="mac-book-pro141-text28">$1.00/Day</span>
+          <img
+            src="public/external/rectangle15625-zkre-200h.png"
+            alt="Rectangle15625"
+            class="mac-book-pro141-rectangle15"
+          />
+          <a href="/2/index.html"><span class="mac-book-pro141-text29">Shop Now</span>
+          </a>
+          <img
+            src="public/external/rectangle20935-z5v7-200h.png"
+            alt="Rectangle20935"
+            class="mac-book-pro141-rectangle20"
+          />
+          <span class="mac-book-pro141-text30">Quick View</span>
+          <img
+            src="public/external/rectangle211782-mh74-600h.png"
+            alt="Rectangle211782"
+            class="mac-book-pro141-rectangle21"
+          />
+          <span class="mac-book-pro141-text31">
+            &nbsp;Top Load Washing Machine
+          </span>
+          <span class="mac-book-pro141-text32">$1.00/Day</span>
+          <img
+            src="public/external/rectangle221785-oy1-200h.png"
+            alt="Rectangle221785"
+            class="mac-book-pro141-rectangle22"
+          />
+          <span class="mac-book-pro141-text33">Shop Now</span>
+          <img
+            src="public/external/rectangle231787-z2o-200h.png"
+            alt="Rectangle231787"
+            class="mac-book-pro141-rectangle231"
+          />
+          <span class="mac-book-pro141-text34">Quick View</span>
+          <img
+            src="public/external/rectangle241790-wai-600h.png"
+            alt="Rectangle241790"
+            class="mac-book-pro141-rectangle24"
+          />
+          <span class="mac-book-pro141-text35">
+            Single Door Fridge (190 Litre)
+          </span>
+          <span class="mac-book-pro141-text36">$1.00/Day</span>
+          <img
+            src="public/external/rectangle251793-1ug5-200h.png"
+            alt="Rectangle251793"
+            class="mac-book-pro141-rectangle25"
+          />
+          <span class="mac-book-pro141-text37">Shop Now</span>
+          <img
+            src="public/external/rectangle261795-iame-200h.png"
+            alt="Rectangle261795"
+            class="mac-book-pro141-rectangle26"
+          />
+          <span class="mac-book-pro141-text38">Quick View</span>
+          <span class="mac-book-pro141-text39">
+            Your feedback helps us get it right
+          </span>
+          <span class="mac-book-pro141-text40">TESTEMONIALS</span>
+          <span class="mac-book-pro141-text41">See more &gt;</span>
+          <div class="mac-book-pro141-testemonial1">
+            <img
+              src="public/external/rectangle23944-3ch.svg"
+              alt="Rectangle23944"
+              class="mac-book-pro141-rectangle232"
+            />
+            <div class="mac-book-pro141-stars1">
+              <img
+                src="public/external/star1946-i087-200h.png"
+                alt="star1946"
+                class="mac-book-pro141-star11"
+              />
+              <img
+                src="public/external/star2947-pz6s-200h.png"
+                alt="star2947"
+                class="mac-book-pro141-star21"
+              />
+              <img
+                src="public/external/star3949-na-200h.png"
+                alt="star3949"
+                class="mac-book-pro141-star31"
+              />
+              <img
+                src="public/external/star4951-e826-200h.png"
+                alt="star4951"
+                class="mac-book-pro141-star41"
+              />
+              <img
+                src="public/external/star5953-wnqo-200h.png"
+                alt="star5953"
+                class="mac-book-pro141-star51"
+              />
+            </div>
+            <span class="mac-book-pro141-text42">
+              RentoMojo is one of India’s best-known rental brands with a
+              pan-India presence. You can rent furniture, appliances, and
+              electronics from us in Mumbai&nbsp;
+            </span>
+          </div>
+          <div class="mac-book-pro141-testemonial2">
+            <img
+              src="public/external/rectangle231760-2jgc.svg"
+              alt="Rectangle231760"
+              class="mac-book-pro141-rectangle233"
+            />
+            <div class="mac-book-pro141-stars2">
+              <img
+                src="public/external/star11762-qnwb-200h.png"
+                alt="star11762"
+                class="mac-book-pro141-star12"
+              />
+              <img
+                src="public/external/star21763-ovon-200h.png"
+                alt="star21763"
+                class="mac-book-pro141-star22"
+              />
+              <img
+                src="public/external/star31764-538-200h.png"
+                alt="star31764"
+                class="mac-book-pro141-star32"
+              />
+              <img
+                src="public/external/star41765-svv-200h.png"
+                alt="star41765"
+                class="mac-book-pro141-star42"
+              />
+              <img
+                src="public/external/star51766-x9p-200h.png"
+                alt="star51766"
+                class="mac-book-pro141-star52"
+              />
+            </div>
+            <span class="mac-book-pro141-text43">
+              RentoMojo is one of India’s best-known rental brands with a
+              pan-India presence. You can rent furniture, appliances, and
+              electronics from us in Mumbai&nbsp;
+            </span>
+          </div>
+          <img
+            src="public/external/screenshotfrom2024102823361711710-qtd-600h.png"
+            alt="Screenshotfrom2024102823361711710"
+            class="mac-book-pro141-screenshotfrom202410282336171"
+          />
+          <img
+            src="public/external/screenshotfrom2024102823375911710-7faa-700w.png"
+            alt="Screenshotfrom2024102823375911710"
+            class="mac-book-pro141-screenshotfrom202410282337591"
+          />
+          <img
+            src="public/external/rectangle271710-jo2l-300h.png"
+            alt="Rectangle271710"
+            class="mac-book-pro141-rectangle27"
+          />
+          <span class="mac-book-pro141-text44">Home Appliances</span>
+          <span class="mac-book-pro141-text45">See more &gt;</span>
+          <img
+            src="public/external/rectangle281710-pgnu.svg"
+            alt="Rectangle281710"
+            class="mac-book-pro141-rectangle28"
+          />
+          <img
+            src="public/external/rectangle291710-mwyg-400w.png"
+            alt="Rectangle291710"
+            class="mac-book-pro141-rectangle29"
+          />
+          <img
+            src="public/external/rectangle301711-8t1m-300h.png"
+            alt="Rectangle301711"
+            class="mac-book-pro141-rectangle30"
+          />
+          <img
+            src="public/external/rectangle311711-futa-300h.png"
+            alt="Rectangle311711"
+            class="mac-book-pro141-rectangle31"
+          />
+          <div class="mac-book-pro141-group6">
+            <span class="mac-book-pro141-text46">Electronics</span>
+            <span class="mac-book-pro141-text47">See more &gt;</span>
+          </div>
+          <img
+            src="public/external/rectangle321712-tpri-300h.png"
+            alt="Rectangle321712"
+            class="mac-book-pro141-rectangle32"
+          />
+          <div class="mac-book-pro141-group7">
+            <span class="mac-book-pro141-text48">Cameras</span>
+            <span class="mac-book-pro141-text49">See more &gt;</span>
+          </div>
+          <div class="mac-book-pro141-group8">
+            <span class="mac-book-pro141-text50">Gym</span>
+            <span class="mac-book-pro141-text51">See more &gt;</span>
+          </div>
+          <div class="mac-book-pro141-group9">
+            <span class="mac-book-pro141-text52">Sports</span>
+            <span class="mac-book-pro141-text53">See more &gt;</span>
+          </div>
+          <div class="mac-book-pro141-group5">
+            <span class="mac-book-pro141-text54">Books</span>
+            <span class="mac-book-pro141-text55">See more &gt;</span>
+          </div>
+          <img
+            src="public/external/rectangle332217-urq7m-300h.png"
+            alt="Rectangle332217"
+            class="mac-book-pro141-rectangle33"
+          />
+          <span class="mac-book-pro141-text56">Finest-Quality Products</span>
+          <span class="mac-book-pro141-text57">
+            Quality matters to you, and us! That's why we do a strict
+            quality-check for every product.
+          </span>
+          <img
+            src="public/external/rectangle342224-t36j-300h.png"
+            alt="Rectangle342224"
+            class="mac-book-pro141-rectangle34"
+          />
+          <span class="mac-book-pro141-text58">Finest-Quality Products</span>
+          <span class="mac-book-pro141-text59">
+            Quality matters to you, and us! That's why we do a strict
+            quality-check for every product.
+          </span>
+          <img
+            src="public/external/rectangle352228-y17b-500w.png"
+            alt="Rectangle352228"
+            class="mac-book-pro141-rectangle35"
+          />
+          <span class="mac-book-pro141-text60">Finest-Quality Products</span>
+          <span class="mac-book-pro141-text61">
+            Quality matters to you, and us! That's why we do a strict
+            quality-check for every product.
+          </span>
+          <img
+            src="public/external/rectangle362232-fyy6-300h.png"
+            alt="Rectangle362232"
+            class="mac-book-pro141-rectangle36"
+          />
+          <span class="mac-book-pro141-text62">Finest-Quality Products</span>
+          <span class="mac-book-pro141-text63">
+            Quality matters to you, and us! That's why we do a strict
+            quality-check for every product.
+          </span>
+          <img
+            src="public/external/rectangle372235-kl6-300h.png"
+            alt="Rectangle372235"
+            class="mac-book-pro141-rectangle37"
+          />
+          <span class="mac-book-pro141-text64">Finest-Quality Products</span>
+          <span class="mac-book-pro141-text65">
+            Quality matters to you, and us! That's why we do a strict
+            quality-check for every product.
+          </span>
+          <img
+            src="public/external/rectangle382238-c29-500w.png"
+            alt="Rectangle382238"
+            class="mac-book-pro141-rectangle38"
+          />
+          <span class="mac-book-pro141-text66">Finest-Quality Products</span>
+          <span class="mac-book-pro141-text67">
+            Quality matters to you, and us! That's why we do a strict
+            quality-check for every product.
+          </span>
+          <img
+            src="public/external/arrowdropdown2445-uofe.svg"
+            alt="arrowdropdown2445"
+            class="mac-book-pro141-arrowdropdown"
+          />
+          <div class="mac-book-pro141-searchbar">
+            <img
+              src="public/external/search240-qxxk.svg"
+              alt="Search240"
+              class="mac-book-pro141-search"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
